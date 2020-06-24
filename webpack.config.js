@@ -19,6 +19,17 @@ const conf = {
     module: {
         rules: [
             {
+                test: /\.css$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    {
+                        loader: 'css-loader',
+                        options: { importLoaders: 1, sourceMap: true }
+                    },
+                    { loader: 'postcss-loader', options: { sourceMap: true } },
+                ]
+            },
+            {
                 test: /\.s[ac]ss$/,
                 use: [
                     MiniCssExtractPlugin.loader,
@@ -35,8 +46,17 @@ const conf = {
                 loader: 'file-loader',
                 options: {
                     name: '[name].[ext]',
-                    outputPath: path.resolve(__dirname, 'dist/img'),
-                    publicPath: './img/'
+                    outputPath: 'img',
+                    publicPath: './img'
+                },
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]',
+                    outputPath: 'fonts',
+                    publicPath: './fonts'
                 },
             }
         ]

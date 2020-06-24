@@ -1,0 +1,33 @@
+@import './header.scss';
+@import './tools/colors.scss';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    color: $white;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+@media screen and (min-width: 1440px){
+    .wrapper{
+        width: 63.06%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1439px){
+    .wrapper{
+        width: 95%;
+        margin: 0 auto;
+    }
+}
