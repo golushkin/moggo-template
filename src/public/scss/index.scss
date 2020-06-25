@@ -1,11 +1,13 @@
 @import './header.scss';
+@import './about.scss';
+@import './numbers.scss';
 @import './tools/colors.scss';
 
 
 *{
     margin: 0;
     padding: 0;
-    color: $white;
+    //color: $white;
 }
 
 li{
@@ -16,17 +18,15 @@ a{
     text-decoration: none;
 }
 
-
-
 @media screen and (min-width: 1440px){
-    .wrapper{
+    .wrapper-nav, .wrapper-numbers, .wrapper-about{
         width: 63.06%;
         margin: 0 auto;
     }
 }
 
 @media screen and (max-width: 1439px){
-    .wrapper{
+    .wrapper-nav, .wrapper-numbers, .wrapper-about{
         width: 95%;
         margin: 0 auto;
     }

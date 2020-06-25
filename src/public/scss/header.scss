@@ -9,9 +9,10 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    color: $white;
 
     padding: 1.875rem 0;
-    & .wrapper{
+    & .wrapper-nav{
         /* Navigation panel */
         & nav{
             display: flex;
@@ -41,19 +42,15 @@ header{
                         font-size: 2rem;
                         text-transform: uppercase;
                         font-weight: bold;
+                        & a{
+                            color: $white;
+                        }
                     }
                 }
             }
             & .mobile-nav{
                 align-items: center;
                 justify-content: space-around;
-            }
-            & i{
-                cursor: pointer;
-                transition: all $time ease-in-out;
-                &:hover{
-                    color: $hover_color;
-                }
             }
             & .burger{
                 margin-top: -2px;
@@ -82,6 +79,7 @@ header{
                 font-size: 1.875rem;
                 font-family: 'MontserratBold';
                 & a{
+                    color: $white;
                     transition: all $time ease-in-out;
                     &:hover{
                         color: $hover_color;
@@ -92,23 +90,22 @@ header{
                 font-size: $small_text;
                 text-transform: uppercase;
                 align-items: center;
-                &.active{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                    & li{
-                        font-size: 10rem;
-                    }
-                }
                 & li{
                     display: inline-block;
                     margin: 0 25px;
                     padding: 5px 0;
+                    & svg path{
+                        cursor: pointer;
+                        transition: all $time ease-in-out;
+                        &:hover{
+                            fill: $hover_color;
+                        }
+                    }
                     &:last-child{
                         margin-right: 0;
                     }
                     & a{
+                        color: $white;
                         transition: all $time ease-in-out;
                         position: relative;
                         &::before{

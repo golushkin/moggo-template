@@ -29,6 +29,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "material-icons": "^0.3.1"
+    "@fortawesome/fontawesome-free": "^5.13.1",
+    "font-awesome": "^4.7.0"
   }
 }

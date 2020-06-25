@@ -1,0 +1,73 @@
+@import './tools/colors.scss';
+@import './tools/size.scss';
+@import './tools/break_points.scss';
+
+.numbers{
+    background-color: #95e1d3;
+    .wrapper-numbers{
+        color: $white;
+        display: flex;
+        & .number{
+            text-align: center;
+            flex-basis: 19.88%;
+            border-right: 1px solid #b5eae0;
+            padding: 7.2% 0;
+            &:first-child{
+                border-left: 1px solid #b5eae0;  
+            }
+            &:last-child{
+                border-left: 1px solid #b5eae0;  
+            }
+            & .title{
+                font-size: $number_title;
+                font-family: 'MontserratBold';
+            }
+            & p{
+                font-size: $number_p;
+                text-transform: uppercase;
+                font-family: 'Montserrat';
+                font-weight: bold;
+            }
+        }
+    } 
+}
+
+//3.2%
+
+
+@media screen and (max-width: $tablet){
+    .number{
+        padding: 3.2% 0 !important;
+
+        & .title{
+            font-size: $number_title_tablet !important;
+        }
+    }
+}
+
+@media screen and (max-width: $mobile_l){
+    .number{
+        //padding: 3.2% 0 !important;
+
+        & .title{
+            font-size: $number_title_mobile_l !important;
+        }
+        & p{
+            font-size: $number_p_mobile_l !important;
+        }
+    }
+}
+
+
+@media screen and (max-width: $mobile_m){
+    .number{
+        //padding: 3.2% 0 !important;
+
+        & .title{
+            font-size: $number_title_mobile_m !important;
+        }
+        & p{
+            font-size: $number_p_mobile_m !important;
+        }
+    }
+}
