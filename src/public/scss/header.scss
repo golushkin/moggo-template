@@ -22,9 +22,14 @@ header{
                 position: absolute;
                 left: 0;
                 top: -150%;
+                height: 100%;
+                width: 100%;
                 background-color: rgba(233,130,131,0.9);
                 transition: all 0.5s ease-in-out;
                 z-index: 10;
+                &.active{
+                    top: 0;
+                }
                 & ul{
                     display: flex;
                     justify-content: center;
@@ -320,5 +325,26 @@ header{
 @media screen and (max-width: 428px){
     .mobile-nav{
         flex-basis: 35% !important;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .slide{
+        & .title{
+            font-size: 1rem;
+        }
+        & .text{
+            font-size: 2.375rem;
+        }
+        & .btn{
+            font-size: 0.7rem;
+        }
+    }
+    .dot{
+        font-size: 0.8rem;
+        text-align: center;
+        & span{
+            display: none;
+        }
     }
 }
