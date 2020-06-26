@@ -1,0 +1,53 @@
+@import './tools/fonts.scss';
+@import './tools/size.scss';
+@import './tools/colors.scss';
+
+
+.work{
+    & .works{
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 0 5%;
+
+        & .item{
+            display: flex;
+            padding: 2rem 0;
+            & .icon{
+                font-size: 1.5rem;
+                & path{
+                    fill: $bg_img;
+                }
+            }
+            & .info{
+                margin-left: 1rem;
+                & h6{
+                    font-family: 'Montserrat';
+                    font-size: $service_info_title;
+                    text-transform: uppercase;
+                }
+                & p{
+                    margin-top: 15px;
+                    font-family: 'Roboto';
+                    font-size: $service_info_p;
+                    color: $light_black;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $tablet){
+    .works{
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: repeat(3, 1fr) !important;
+    }
+}
+
+@media screen and (max-width: $mobile_l){
+    .works{
+        grid-template-columns: repeat(1, 1fr) !important;
+        grid-template-rows: repeat(6, 1fr) !important;
+    }
+}

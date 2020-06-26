@@ -1,0 +1,35 @@
+@import './tools/size.scss';
+
+.design{
+    background-image: url('../img/lake_bg.jpg');
+    background-repeat: no-repeat;
+    padding: 1px 0;
+    margin-top: 5rem;
+
+    & .img{
+        text-align: center;
+        margin-top: 3rem;
+        position: relative;
+        margin-bottom: -4px;
+        & img:last-child{
+            position: absolute;
+            bottom: -17%;
+            left: 50%;
+            margin-left: 10%;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet){
+    .img{
+        & img:first-child{
+            height: 50%;
+            width: 60%;
+        }
+        & img:last-child{
+            height: 50%;
+            width: 20%;
+            margin-left: 13% !important;
+        }
+    }
+}

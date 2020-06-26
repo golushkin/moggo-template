@@ -3,31 +3,7 @@
 
 .wrapper-about{
     color: $black; 
-    & .title{
-        text-align: center;
-        color: $black; 
-        margin-top: 5rem;
-        & p:first-child{
-            font-family: 'KaushanScript';
-            font-size: $about_title;
-        }
-        & p:last-child{
-            font-family: 'MontserratBold';
-            text-transform: uppercase;
-            position: relative;
-            font-size: $about_caps;
-            padding: 10px 0;
-            &::after{
-                content: '';
-                position: absolute;
-                bottom: -30px;
-                left: calc(50% - 3.125rem/2);
-                width: 3.125rem;
-                height: 3px;
-                background-color: $hover_color_red;
-            }
-        }
-    }
+    
     & .text{
         text-align: center;
         margin: 5.2rem 0;
@@ -43,6 +19,8 @@
         & .img{
             flex-basis: 32%;
             position: relative;
+            user-select: none;
+            cursor: pointer;
             & img{
                 height: 100%;
                 width: 100%;
