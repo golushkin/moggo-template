@@ -1,0 +1,138 @@
+@import './tools/common.scss';
+@import './tools/size.scss';
+@import './tools/fonts.scss';
+@import './tools/colors.scss';
+
+.service{
+    & .title{
+        margin-top: 9rem;
+    }
+    & .text{
+        text-align: center;
+        font-family: 'Roboto';
+        font-size: $service_info_p;
+        color: $light_black;
+        margin-top: 5.625rem;
+    }
+
+    & .img-with-info{
+        display: flex;
+        margin-top: 2rem;
+        align-items: flex-start;
+        & .img{
+            & img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        & .info{
+            flex-basis: 50%;
+            margin-left: 2rem;
+            & .item{
+                margin-bottom: 2rem;
+                & .header{
+                    border: 1px solid $border;
+                    padding: 10px;
+                    display: grid;
+                    grid-template-columns: 50px repeat(2, 1fr);
+                    align-items: center;
+                    & p{
+                        text-transform: uppercase;
+                        font-family: 'Montserrat';
+                        font-weight: bold;
+                        justify-self: start;
+                    }
+                    & .icon{
+                        font-size: 1.5rem;
+                        & path{
+                            fill: $bg_img;
+                        }
+                    }
+                    & .arrow{
+                        color: $light_black;
+                        justify-self: end;
+                        font-size: 2rem;
+                        transform: rotate(90deg);
+                        cursor: pointer;
+                        margin-right: 10px;
+                        transition: all .3s ease-in-out;
+                        &.active{
+                            transform: rotate(-90deg);
+                        }
+                        &:hover{
+                            color: $bg_img;
+                        }
+                    }
+                }
+                & .content{
+                    display: none;
+                    height: 178px;
+                    overflow-y: scroll;
+                    border: 1px solid $border;
+                    border-top: none;
+                    padding: 15px;
+                    font-family: 'Roboto';
+                    color: $light_black;
+                    font-style: italic;
+                    font-size: $service_info_p;
+                    transition: height .3s ease-in-out;
+
+                    &.active{
+                        display: block;
+                    }
+
+                    &.animate-out{
+                        animation: animate-out .3s ease-in-out;
+                    }
+
+                    &.animate{
+                        animation: animate .3s ease-in-out;
+                    }
+
+                    &::-webkit-scrollbar {
+                        width: 5px;
+                      }
+
+                    &::-webkit-scrollbar-track {
+                        background: #f5f5f5;
+                        border-radius: 10px;
+                        margin-right: 10px;
+                      }
+                      
+                    &::-webkit-scrollbar-thumb {
+                        background: $bg_img;
+                        border-radius: 10px;
+                      }
+
+                    &::-webkit-scrollbar-thumb:hover {
+                        background: #555;
+                      }
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes animate{
+    from{
+        height: 0;
+        opacity: .2;
+    }
+    to{
+        height: 178px;
+        opacity: 1;
+    }
+}
+
+
+@keyframes animate-out{
+    from{
+        height: 178px;
+        opacity: 1;
+    }
+    to{
+        height: 0;
+        opacity: .2;
+    }
+}

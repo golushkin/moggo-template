@@ -3,13 +3,13 @@
 @import './numbers.scss';
 @import './work.scss';
 @import './design.scss';
+@import './service.scss';
 @import './tools/colors.scss';
 
 
 *{
     margin: 0;
     padding: 0;
-    //color: $white;
 }
 
 li{
@@ -18,46 +18,4 @@ li{
 
 a{
     text-decoration: none;
-}
-
-.wrapper-about .title, .wrapper-work .title, .wrapper-design .title{
-
-    text-align: center;
-    color: $black; 
-    margin-top: 5rem;
-    & p:first-child{
-        font-family: 'KaushanScript';
-        font-size: $about_title;
-    }
-    & p:last-child{
-        font-family: 'MontserratBold';
-        text-transform: uppercase;
-        position: relative;
-        font-size: $about_caps;
-        padding: 10px 0;
-        &::after{
-            content: '';
-            position: absolute;
-            bottom: -30px;
-            left: calc(50% - 3.125rem/2);
-            width: 3.125rem;
-            height: 3px;
-            background-color: $hover_color_red;
-        }
-    }
- 
-}
-
-@media screen and (min-width: 1440px){
-    .wrapper-nav, .wrapper-numbers, .wrapper-about, .wrapper-work, .wrapper-design{
-        width: 63.06%;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (max-width: 1439px){
-    .wrapper-nav, .wrapper-numbers, .wrapper-about, .wrapper-work, .wrapper-design{
-        width: 95%;
-        margin: 0 auto;
-    }
 }
