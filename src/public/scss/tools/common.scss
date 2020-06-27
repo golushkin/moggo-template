@@ -32,7 +32,8 @@
 @media screen and (min-width: 1440px){
     .wrapper-nav, .wrapper-numbers,
     .wrapper-about, .wrapper-work,
-    .wrapper-design, .wrapper-service{
+    .wrapper-design, .wrapper-service,
+    .wrapper-cite{
         width: 63.06%;
         margin: 0 auto;
     }
@@ -41,7 +42,8 @@
 @media screen and (max-width: 1439px){
     .wrapper-nav, .wrapper-numbers,
     .wrapper-about, .wrapper-work,
-    .wrapper-design, .wrapper-service{
+    .wrapper-design, .wrapper-service,
+    .wrapper-cite{
         width: 95%;
         margin: 0 auto;
     }

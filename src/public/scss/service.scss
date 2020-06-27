@@ -2,6 +2,7 @@
 @import './tools/size.scss';
 @import './tools/fonts.scss';
 @import './tools/colors.scss';
+@import './tools/break_points.scss';
 
 .service{
     & .title{
@@ -134,5 +135,44 @@
     to{
         height: 0;
         opacity: .2;
+    }
+}
+
+
+@media screen and (max-width: $tablet){
+    .service{
+        & .img-with-info{
+            flex-direction: column;
+            align-items: center !important;
+            & .img{
+                width: 80%;
+            }
+            & .info{
+                flex-basis: 100% !important;
+                margin: 0 !important;
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile_l){
+    .img-with-info{
+        & .img{
+            width: 100%;
+        }
+        & .info{
+            width: 100%;
+        }
+    }
+    .service{
+        & .img-with-info{
+            & .img{
+                width: 100%;
+            }
+            & .info{
+                width: 100%;
+            }
+        }
     }
 }

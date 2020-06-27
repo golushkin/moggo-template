@@ -22,15 +22,17 @@
 }
 
 @media screen and (max-width: $tablet){
-    .img{
-        & img:first-child{
-            height: 50%;
-            width: 60%;
-        }
-        & img:last-child{
-            height: 50%;
-            width: 20%;
-            margin-left: 13% !important;
+    .design{
+        & .img{
+            & img:first-child{
+                height: 50%;
+                width: 60%;
+            }
+            & img:last-child{
+                height: 50%;
+                width: 20%;
+                margin-left: 13% !important;
+            }
         }
     }
 }

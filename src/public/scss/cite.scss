@@ -1,0 +1,111 @@
+@import './tools/common.scss';
+@import './tools/colors.scss';
+@import './tools/fonts.scss';
+@import './tools/size.scss';
+@import './tools/break_points.scss';
+
+.cite{
+    background-color: #f8f8f8;
+    margin-top: 5rem;
+    padding: 3rem 0;
+    
+    & .wrapper-cite{
+        position: relative;
+        & .slider-wrapper{
+            width: 94%;
+            margin: 0 auto;
+            overflow: hidden;
+            & .slider{
+                display: flex;
+                transition: transform 1s ease-in-out;
+                & .item{
+                    min-width: calc(100% - 2rem);
+                    padding-left: 2rem;
+                    display: inherit;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    & .icon{
+                        border: 2px solid $bg_img;
+                        padding: 2.5rem;
+                        font-size: 3.3rem;
+                        & svg path{
+                            fill: $bg_img;
+                        }
+                    }
+                    & .info{
+                        margin-left: 3rem;
+                        font-size: $cite_p;
+                        & p{
+                            font-style: italic;
+                            font-family: 'Roboto';
+                            color: $light_black;
+                        }
+                        & .author{
+                            font-family: 'KaushanScript';
+                            position: relative;
+                            padding-left: calc(3.125rem + 10px);
+                            margin-top: .5rem;
+                            text-transform: capitalize;
+                            &::after{
+                                content: '';
+                                position: absolute;
+                                left: 0;
+                                top: calc(50% - 3px);
+                                width: 3.125rem;
+                                height: 3px;
+                                background-color: $hover_color_red;
+                            }
+                        }
+                    }
+                }
+            }
+
+            & .slider-btn{
+                font-size: 3rem;
+                color: $light_black;
+    
+                & .left, .right{
+                    position: absolute;
+                    top: calc(50% - 25px);
+                    transition: color .3s ease-in-out;
+                    cursor: pointer;
+                    &:hover{
+                        color: $bg_img;
+                    }
+                        
+                }
+                & .left{
+                    left: 0;
+                }
+                & .right{
+                    right: 0;
+                }
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: $tablet){
+    .cite{
+        & .item{
+            & .icon{
+                display: none;
+            }
+            & .info{
+                margin: 0 !important;
+                font-size: 1.1rem !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile_s){
+    .cite{
+        & .item{
+            & .info{
+                font-size: 1rem !important;
+            }
+        }
+    }
+}
