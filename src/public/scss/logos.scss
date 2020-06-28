@@ -1,0 +1,22 @@
+@import './tools/break_points.scss';
+
+.logos{
+    margin-top: 6rem;
+    &> .wrapper{
+        display: flex;
+        justify-content: space-between;
+        & .img img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet){
+    .logos{
+        & > .wrapper{
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+}

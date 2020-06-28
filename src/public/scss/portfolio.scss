@@ -1,0 +1,98 @@
+@import './tools/break_points.scss';
+@import './tools/fonts.scss';
+@import './tools/size.scss';
+@import './tools/colors.scss';
+
+
+.portfolio{
+    & > .images{
+        margin-top: 6rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:    "img1 img2 img3 img4"
+                                "img5 img6 img3 img7";
+        & .img:nth-child(1){
+            grid-area: img1;
+               
+        }
+        & .img:nth-child(2){
+            grid-area: img2;  
+        }
+        & .img:nth-child(3){
+            grid-area: img3;  
+        }
+        & .img:nth-child(4){
+            grid-area: img4;  
+        }
+        & .img:nth-child(5){
+            grid-area: img5;  
+        }
+        & .img:nth-child(6){
+            grid-area: img6;  
+        }
+        & .img:nth-child(7){
+            grid-area: img7;  
+        }
+        & img{
+            width: 100%;
+        }
+        & .img{
+            position: relative;
+            &:hover{
+                & .bg{
+                    opacity: .9;
+                    transform: scale(1);
+                }
+            }
+            & .bg{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(180deg, #f38181,#fce38a);
+                opacity: 0;
+                transition: all .3s ease-in-out;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                color: $white;
+                transform: scale(0);
+                & .icon{
+                    font-size: 2rem;
+                }
+                & > p.text{
+                    text-transform: uppercase;
+                    font-family: 'Montserrat';
+                    font-weight: bold;
+                    font-size: $port_p1;
+                    margin: .7rem 0;
+                }
+                & p:last-child{
+                    font-style: italic;
+                    font-family: 'Roboto';
+                    font-size: $port_p2;
+                }
+            }
+            &.flex{
+                display: flex;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: $tablet){
+    .portfolio{
+        & .images{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas:    "img1 img2"
+                                    "img3 img4"
+                                    "img3 img5"
+                                    "img6 img7";
+        }
+    }
+}

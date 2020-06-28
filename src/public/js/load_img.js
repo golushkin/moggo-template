@@ -22,3 +22,12 @@ import logo4 from '../img/logo-4.png'
 import logo5 from '../img/logo-5.png'
 import logo6 from '../img/logo-6.png'
 
+/*portfolio*/
+import po1 from '../img/po1.png'
+import po2 from '../img/po2.png'
+import po3 from '../img/po3.png'
+import po4 from '../img/po4.png'
+import po5 from '../img/po5.png'
+import po6 from '../img/po6.png'
+import po7 from '../img/po7.png'
+import po8 from '../img/test.png'

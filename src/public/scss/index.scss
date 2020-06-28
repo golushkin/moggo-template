@@ -6,6 +6,8 @@
 @import './service.scss';
 @import './cite.scss';
 @import './team.scss';
+@import './logos.scss';
+@import './portfolio.scss';
 @import './tools/colors.scss';
 
 
@@ -20,4 +22,9 @@ li{
 
 a{
     text-decoration: none;
+}
+
+img{
+    pointer-events: none;
+    user-select: none;
 }
