@@ -1,0 +1,111 @@
+@import './tools/common.scss';
+@import './tools/fonts.scss';
+@import './tools/colors.scss';
+@import './tools/break_points.scss';
+
+.team{
+    & .images{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 6rem;
+        & .item{
+            flex-basis: 31.7%;
+            & .img{
+                position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    z-index: 1;
+                    background-color: $bg_img;
+                    opacity: 0;
+                    transition: opacity .3s ease-in-out;
+                }
+                &:hover{
+                    &::before{
+                        opacity: 1;
+                    }
+                    & .bg-media{
+                        opacity: 0.8;
+                        transform: translate(-10px,-10px);
+                    }
+                }
+                & .bg-media{
+                    display: flex;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    z-index: 2;
+                    background: linear-gradient(180deg, #f38181,#fce38a);
+                    opacity: 0;
+                    transform: translate(0,0);
+                    transition: all .3s ease-in-out;
+                    justify-content: center;
+                    align-items: center;
+
+                    & svg{
+                        padding: 15px;
+                        background-color: $hover_color;
+                        border-right: 1px solid #f9bd87;
+                        cursor: pointer;
+                        transition: all .3s ease-in-out;
+                        &:hover{
+                            background-color: $hover_color_red;
+                            & path{
+                                fill: $white;
+                            }
+                        }
+                        &:last-child{
+                            border: 0;
+                        }
+                        & path{
+                            fill: $hover_color_red;
+                        }
+                    }
+                }
+                & img{
+                    width: 100%;
+                    height: 100%;
+                }
+                
+            }
+            & .name{
+                margin-top: 2rem;
+                text-transform: uppercase;
+                font-family: 'Montserrat';
+                font-size: $team_name;
+                text-align: center;
+                font-weight: bold;
+            }
+            & .job{
+                margin-top: .5rem;
+                text-transform: capitalize;
+                color: $light_black;
+                font-style: italic;
+                font-size: $team_job;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile_l){
+    .team{
+        & .images{
+            flex-direction: column;
+            align-items: center;
+            & .item{
+                width: 85%;
+                margin-top: 3rem;
+                &:first-child{
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
