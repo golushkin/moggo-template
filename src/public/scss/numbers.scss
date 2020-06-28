@@ -5,7 +5,7 @@
 
 .numbers{
     background-color: #95e1d3;
-    .wrapper-numbers{
+    .wrapper{/*maybe here will be error .wrapper-numbers*/
         color: $white;
         display: flex;
         & .number{
@@ -19,7 +19,7 @@
             &:last-child{
                 border-left: 1px solid #b5eae0;  
             }
-            & .title{
+            & .number-title{
                 font-size: $number_title;
                 font-family: 'MontserratBold';
             }
@@ -40,7 +40,7 @@
     .number{
         padding: 3.2% 0 !important;
 
-        & .title{
+        & .number-title{
             font-size: $number_title_tablet !important;
         }
     }
@@ -50,7 +50,7 @@
     .number{
         //padding: 3.2% 0 !important;
 
-        & .title{
+        & .number-title{
             font-size: $number_title_mobile_l !important;
         }
         & p{
@@ -64,7 +64,7 @@
     .number{
         //padding: 3.2% 0 !important;
 
-        & .title{
+        & .number-title{
             font-size: $number_title_mobile_m !important;
         }
         & p{

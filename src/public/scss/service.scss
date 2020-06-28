@@ -157,15 +157,15 @@
 }
 
 @media screen and (max-width: $mobile_l){
-    .img-with-info{
-        & .img{
-            width: 100%;
-        }
-        & .info{
-            width: 100%;
-        }
-    }
     .service{
+        .img-with-info{
+            & .img{
+                width: 100%;
+            }
+            & .info{
+                width: 100%;
+            }
+        }
         & .img-with-info{
             & .img{
                 width: 100%;

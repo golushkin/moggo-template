@@ -2,80 +2,83 @@
 @import './tools/size.scss';
 @import './tools/common.scss';
 
-.wrapper-about{
-    color: $black; 
+
+.about{
+    & .wrapper{
+        color: $black; 
+        
+        & .text{
+            text-align: center;
+            margin: 5.2rem 0;
+            color: $light_black;
+            font-family: "Roboto";
+            font-size: $about_text;
+        }
+        & .images{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 6.875rem;
     
-    & .text{
-        text-align: center;
-        margin: 5.2rem 0;
-        color: $light_black;
-        font-family: "Roboto";
-        font-size: $about_text;
-    }
-    & .images{
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 6.875rem;
-
-        & .img{
-            flex-basis: 32%;
-            position: relative;
-            user-select: none;
-            cursor: pointer;
-            & img{
-                height: 100%;
-                width: 100%;
-            }
-            &::before{
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                z-index: 1;
-                background-color: $bg_img;
-                opacity: 0;
-                transition: opacity .3s ease-in-out;
-            }
-
-            & .display-block{
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                z-index: 2;
-                background: linear-gradient(180deg, #f38181,#fce38a);
-                opacity: 0;
-                transform: translate(0,0);
-                transition: all .3s ease-in-out;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                & p {
-                    color: $white;
-                    text-transform: uppercase;
-                    font-family: 'MontserratBold';
-                    margin: 5px 0;
-                    & svg path{ 
-                        fill: $white;
-                    }
-
-                    &.icon{
-                        font-size: 2rem;
-                    }
+            & .img{
+                flex-basis: 32%;
+                position: relative;
+                user-select: none;
+                cursor: pointer;
+                & img{
+                    height: 100%;
+                    width: 100%;
                 }
-            }
-            &:hover{
                 &::before{
-                    opacity: 1;
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    z-index: 1;
+                    background-color: $bg_img;
+                    opacity: 0;
+                    transition: opacity .3s ease-in-out;
                 }
-
+    
                 & .display-block{
-                    opacity: 0.8;
-                    transform: translate(-10px,-10px);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    z-index: 2;
+                    background: linear-gradient(180deg, #f38181,#fce38a);
+                    opacity: 0;
+                    transform: translate(0,0);
+                    transition: all .3s ease-in-out;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    & p {
+                        color: $white;
+                        text-transform: uppercase;
+                        font-family: 'MontserratBold';
+                        margin: 5px 0;
+                        & svg path{ 
+                            fill: $white;
+                        }
+    
+                        &.icon{
+                            font-size: 2rem;
+                        }
+                    }
+                }
+                &:hover{
+                    &::before{
+                        opacity: 1;
+                    }
+    
+                    & .display-block{
+                        opacity: 0.8;
+                        transform: translate(-10px,-10px);
+                    }
                 }
             }
         }

@@ -1,4 +1,4 @@
-const counters = document.querySelectorAll('.numbers .title')
+const counters = document.querySelectorAll('.number-title')
 const numbers = document.querySelector('.number')
 const speed = 200
 let show = false
