@@ -1,3 +1,5 @@
+@import './mixins.scss';
+
 .wrapper .title{
     text-align: center;
     color: $black; 
@@ -24,6 +26,33 @@
     }
  
 }
+
+.spec-title{
+    @include spec-title;
+    font-weight: bold;
+}
+
+.spec-text{
+    @include spec-text;
+}
+
+.spec-text-ic{
+    @include spec-text;
+    font-style: italic;
+    color: $light-black;
+}
+
+.spec-text-c{
+    @include spec-text;
+    color: $light-black;
+}
+
+.spec-text-i{
+    @include spec-text;
+    font-style: italic;
+}
+
+
 
 @media screen and (min-width: 1440px){
     .wrapper{

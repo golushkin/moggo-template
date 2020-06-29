@@ -1,0 +1,10 @@
+@mixin spec_title {
+    font-family: 'Montserrat';
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+
+@mixin spec_text {
+    font-family: 'Roboto';
+    font-size: 0.9375rem;
+}

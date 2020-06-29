@@ -8,6 +8,7 @@
     background-size: cover;
     padding: 1px 0;
     margin-top: 5rem;
+    color: $black;
     & .rows{
         margin-top: 6rem;
         & .row{
@@ -25,16 +26,10 @@
                 }
                 & .info{
                     margin-left: 1rem;
-                    & .person{
-                        text-transform: uppercase;
-                        font-family: 'Montserrat';
-                        font-weight: bold;
+                    & > .spec-title{
                         font-size: $ct_person;
-    
                     }
-                    & .job{
-                        font-style: italic;
-                        font-family: 'Roboto';
+                    & > .spec-text-i{
                         font-size: $ct_job;
                         text-transform: capitalize;
                         margin-top: .5rem;
@@ -45,11 +40,7 @@
                         background-color: $hover_color_red;
                         margin: 1rem 0;
                     }
-                    & p{
-                        color: $light_black;
-                        font-family: 'Roboto';
-                        font-size: $ct_p;
-                    }
+                  
                 }
             }
         }

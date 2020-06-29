@@ -1,6 +1,6 @@
 const left = document.querySelector('.left')
 const right = document.querySelector('.right')
-const items = document.querySelectorAll('.cite .item')
+const items = document.querySelectorAll('.cite.first .item')
 let currentItem = 0
 
 

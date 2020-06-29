@@ -1,0 +1,89 @@
+@import './tools/colors.scss';
+@import './tools/fonts.scss';
+@import './tools/size.scss';
+@import './tools/common.scss';
+@import './tools/break_points.scss';
+
+
+.stories{
+    & .blog{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 6rem;
+        & .item{
+            flex-basis: 32%;
+            & .img{
+                position: relative;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                }
+                & .info-img{
+                    color: $white;
+                    position: absolute;
+                    bottom: 10px;
+                    left: -10px;
+                    padding: 1rem;
+                    background-color: $bg;
+                    & > .spec-title{
+                        font-size: 1.875rem;
+                        
+                    }
+                    & > .spec-text{
+                        font-size: 0.9375rem;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+            & > .spec-title{
+                margin: 1rem 0;
+            }
+            & > .spec-text-c{
+                border-bottom: 1px solid $border;
+                padding-bottom: 1.2rem;
+            }
+            & .info-blog{
+                margin-top: 1rem;
+                & path{
+                    fill: $bg;
+                }
+                & span{
+                    margin: 0 .3rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $tablet){
+    .stories{
+        & .blog{
+            justify-content: center;
+            flex-wrap: wrap;
+            & .item{
+                flex-basis: 57%;
+                margin: 1rem 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile_l){
+    .stories{
+        & .blog{
+            & .item{
+                flex-basis: 70%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile_m){
+    .stories{
+        & .blog{
+            & .item{
+                flex-basis: 80%;
+            }
+        }
+    }
+}

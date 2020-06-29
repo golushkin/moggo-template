@@ -41,3 +41,9 @@ import client1 from '../img/client1.png'
 import client2 from '../img/client2.png' 
 import client3 from '../img/client3.png' 
 import client4 from '../img/client4.png' 
+
+/* stories */
+
+import story1 from '../img/story1.jpg'
+import story2 from '../img/story2.jpg'
+import story3 from '../img/story3.jpg'
