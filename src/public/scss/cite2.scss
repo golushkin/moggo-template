@@ -1,0 +1,51 @@
+@import './tools/common.scss';
+@import './tools/colors.scss';
+@import './tools/fonts.scss';
+@import './tools/size.scss';
+@import './tools/break_points.scss';
+
+.cite.second{
+    background-color: $white;
+    & .item{
+        align-items: center !important;
+        & .img{
+            flex-basis: 38%;
+            & img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    & .slider-btn{
+        font-size: 3rem;
+        color: $light_black;
+
+        & .left-cite2, .right-cite2{
+            position: absolute;
+            top: calc(50% - 25px);
+            transition: color .3s ease-in-out;
+            cursor: pointer;
+            &:hover{
+                color: $bg_img;
+            }
+                
+        }
+        & .left-cite2{
+            left: 0;
+        }
+        & .right-cite2{
+            right: 0;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: $tablet){
+    .cite{
+        & .img{
+            display: none;
+        }
+    }
+}

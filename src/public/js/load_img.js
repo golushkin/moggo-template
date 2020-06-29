@@ -31,3 +31,6 @@ import po5 from '../img/po5.png'
 import po6 from '../img/po6.png'
 import po7 from '../img/po7.png'
 import po8 from '../img/test.png'
+
+/* cite2 */
+import cite2 from '../img/cite2.png'
