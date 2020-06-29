@@ -34,3 +34,10 @@ import po8 from '../img/test.png'
 
 /* cite2 */
 import cite2 from '../img/cite2.png'
+
+/* clients */
+import client_bg from '../img/client-bg.jpg' 
+import client1 from '../img/client1.png' 
+import client2 from '../img/client2.png' 
+import client3 from '../img/client3.png' 
+import client4 from '../img/client4.png' 

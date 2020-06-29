@@ -1,0 +1,111 @@
+@import './tools/colors.scss';
+@import './tools/fonts.scss';
+@import './tools/size.scss';
+@import './tools/break_points.scss';
+
+.clients{
+    background-image: url(../img/client-bg.jpg);
+    background-size: cover;
+    padding: 1px 0;
+    margin-top: 5rem;
+    & .rows{
+        margin-top: 6rem;
+        & .row{
+            display: flex;
+            justify-content: space-around;
+            margin: 5rem 0;
+            & .item{
+                display: inherit;
+                max-width: 46%;
+                & .img{
+                    flex-basis: 45%;
+                    & img{
+                        width: 100%;
+                    }
+                }
+                & .info{
+                    margin-left: 1rem;
+                    & .person{
+                        text-transform: uppercase;
+                        font-family: 'Montserrat';
+                        font-weight: bold;
+                        font-size: $ct_person;
+    
+                    }
+                    & .job{
+                        font-style: italic;
+                        font-family: 'Roboto';
+                        font-size: $ct_job;
+                        text-transform: capitalize;
+                        margin-top: .5rem;
+                    }
+                    & .border{
+                        width: 3.125rem;
+                        height: 3px;
+                        background-color: $hover_color_red;
+                        margin: 1rem 0;
+                    }
+                    & p{
+                        color: $light_black;
+                        font-family: 'Roboto';
+                        font-size: $ct_p;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $tablet){
+    .clients{
+        & .row{
+            flex-wrap: wrap;
+            margin-top: 1rem !important;
+            margin-bottom: 0 !important;
+            & .item{
+                max-width: none !important;
+                margin: 1rem 0;
+                & .img{
+                    flex-basis: 20% !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile_l){
+    .clients{
+        & .row{
+            & .item{
+                & .img{
+                    flex-basis: 50% !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile_m){
+    .clients{
+        & .row{
+            & .item{
+                & .img{
+                    flex-basis: 70% !important;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: $mobile_m){
+    .clients{
+        & .row{
+            & .item{
+                & .img{
+                    flex-basis: 90% !important;
+                }
+            }
+        }
+    }
+}
