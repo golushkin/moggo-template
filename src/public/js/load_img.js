@@ -48,6 +48,9 @@ import story1 from '../img/story1.jpg'
 import story2 from '../img/story2.jpg'
 import story3 from '../img/story3.jpg'
 
+/* map */
+import map from '../img/map_bg.jpg'
+
 /* footer*/
 import footer_blog1 from '../img/footer-blog1.jpg'
 import footer_blog2 from '../img/footer-blog2.jpg'

@@ -32,3 +32,46 @@ img{
     pointer-events: none;
     user-select: none;
 }
+
+#map{
+    margin-top: 6rem;
+    height: 400px;
+    & .info{
+        display: none;
+    }
+   
+    &.in-active{
+        background-image: url(../img/map_bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        & .info{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            color: $hover_color_red;
+            font-size: 3rem;
+            & span{
+                margin-top: 1rem;
+                cursor: pointer;
+                transition: color .3s ease-in-out;
+                display: inline-block;
+                position: relative;
+                &:hover{
+                    color: $black;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    bottom: -30px;
+                    left: calc(50% - 3.125rem/2);
+                    width: 3.125rem;
+                    height: 3px;
+                    background-color: $hover_color_red;
+                }
+            }
+        }
+    }
+    
+}
