@@ -1,0 +1,153 @@
+@import './tools/colors.scss';
+@import './tools/size.scss';
+@import './tools/break_points.scss';
+
+footer{
+    margin-top: 6rem;
+    & > .wrapper{
+        border-bottom: 1px solid $border;
+        display: grid;
+        grid-template-columns: 1.1625fr 0.875fr 0.675fr;
+        gap: 0 3rem;
+        grid-template-areas: "mogo blogs insta";
+
+        & .mogo{
+            grid-area: mogo;
+            & > .spec-title-bold{
+                font-size: 2rem;
+                color: $light_black;
+            }
+            & .spec-text-c{
+                margin: 2rem 0;
+            }
+            & .spec-text{
+                font-weight: bold;
+                padding: 1rem 0;
+                border-bottom: 1px solid $border;
+            }
+            & .media{
+                display: flex;
+                margin-top: 1rem;
+                & a{
+                    color: $bg;
+                    margin: 0 .5rem;
+                    &:first-child{
+                        margin-left: 2rem;
+                    }
+                }
+            }
+            & form{
+                margin-top: 2rem;
+                & input{
+                    border: 1px solid $border;
+                    padding: 6px 15px;
+                    border-right: none;
+                }
+                & button{
+                    color: $white;
+                    background-color: $bg;
+                    padding: 7px 15px;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+        & .blogs{
+            grid-area: blogs;
+            & > .spec-title-bold{
+                margin-bottom: 3rem;
+                padding-top: 4px;
+                text-transform: uppercase;
+            }
+            & > .item{
+                display: flex;
+                margin-bottom: 2rem;
+                align-items: center;
+                & .info{
+                    margin-left: 1rem;
+                    & .spec-title-bold{
+                        text-transform: uppercase;
+                        font-size: $footer_blog_title;
+                        color: $black;
+                    }
+                    & .spec-text-ic{
+                        margin-top: .4rem;
+                    }
+                }
+            }
+        }
+        & .instagram{       
+            grid-area: insta;     
+            & > .spec-title-bold{
+                margin-bottom: 3rem;
+                padding-top: 4px;
+                text-transform: uppercase;
+            }
+            & .container{
+                display: flex;
+                flex-wrap: wrap;
+                & > .img{
+                    & img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+            & > .spec-text-ic{
+                margin-top: 1.5rem;
+                cursor: pointer;
+                display: inline-block;
+                transition: color .3s ease-in-out;
+                &:hover{
+                    color: $bg;
+                }
+            }
+        }
+    }
+    & > p{
+        text-align: center;
+        padding: 1rem 0;
+        & span{
+            color: $hover_color_red;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: $laptop_l){
+    footer{
+        & .wrapper{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:    "blogs insta"
+                                    "mogo mogo";
+        }
+    }
+}
+
+@media screen and (max-width: $tablet){
+    footer{
+        & .wrapper{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:    "blogs"
+                                    "insta"
+                                    "mogo";
+            & .spec-title-bold{
+                text-align: center;
+            }
+            & .instagram{
+                & .container{
+                    justify-content: center;
+                }
+                & .spec-text-ic{
+                    display: block;
+                    text-align: center;
+                }
+
+            }
+        }
+    }
+}
+

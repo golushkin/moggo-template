@@ -47,3 +47,18 @@ import client4 from '../img/client4.png'
 import story1 from '../img/story1.jpg'
 import story2 from '../img/story2.jpg'
 import story3 from '../img/story3.jpg'
+
+/* footer*/
+import footer_blog1 from '../img/footer-blog1.jpg'
+import footer_blog2 from '../img/footer-blog2.jpg'
+import footer_blog3 from '../img/footer-blog3.jpg'
+
+import footer_insta1 from '../img/footer-insta1.jpg'
+import footer_insta2 from '../img/footer-insta2.jpg'
+import footer_insta3 from '../img/footer-insta3.jpg'
+import footer_insta4 from '../img/footer-insta4.jpg'
+import footer_insta5 from '../img/footer-insta5.jpg'
+import footer_insta6 from '../img/footer-insta6.jpg'
+import footer_insta7 from '../img/footer-insta7.jpg'
+import footer_insta8 from '../img/footer-insta8.jpg'
+import footer_insta9 from '../img/footer-insta9.jpg'

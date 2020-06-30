@@ -28,27 +28,31 @@
 }
 
 .spec-title{
-    @include spec-title;
+    @include spec_title;
     font-weight: bold;
 }
 
+.spec-title-bold{
+    @include spec_title_bold;
+}
+
 .spec-text{
-    @include spec-text;
+    @include spec_text;
 }
 
 .spec-text-ic{
-    @include spec-text;
+    @include spec_text;
     font-style: italic;
     color: $light-black;
 }
 
 .spec-text-c{
-    @include spec-text;
+    @include spec_text;
     color: $light-black;
 }
 
 .spec-text-i{
-    @include spec-text;
+    @include spec_text;
     font-style: italic;
 }
 

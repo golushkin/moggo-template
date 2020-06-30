@@ -4,6 +4,10 @@
     text-transform: uppercase;
 }
 
+@mixin spec_title_bold {
+    font-family: 'MontserratBold';
+}
+
 @mixin spec_text {
     font-family: 'Roboto';
     font-size: 0.9375rem;
