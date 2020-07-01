@@ -37,6 +37,13 @@
             }
             & > .spec-title{
                 margin: 1rem 0;
+                & a{
+                    color: $black;
+                    transition: color .3s ease-in-out;
+                    &:hover{
+                        color: $bg;
+                    }
+                }
             }
             & > .spec-text-c{
                 border-bottom: 1px solid $border;

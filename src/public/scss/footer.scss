@@ -31,8 +31,9 @@ footer{
                 & a{
                     color: $bg;
                     margin: 0 .5rem;
-                    &:first-child{
-                        margin-left: 2rem;
+                    transition: transform .3s ease-in-out;
+                    &:hover{
+                        transform: scale(1.2);
                     }
                 }
             }
@@ -42,6 +43,7 @@ footer{
                     border: 1px solid $border;
                     padding: 6px 15px;
                     border-right: none;
+                    outline: none;
                 }
                 & button{
                     color: $white;
@@ -68,7 +70,13 @@ footer{
                     & .spec-title-bold{
                         text-transform: uppercase;
                         font-size: $footer_blog_title;
-                        color: $black;
+                        & a{
+                            color: $black;
+                            transition: color .3s ease-in-out;
+                            &:hover{
+                                color: $bg;
+                            }
+                        }
                     }
                     & .spec-text-ic{
                         margin-top: .4rem;
@@ -87,6 +95,12 @@ footer{
                 display: flex;
                 flex-wrap: wrap;
                 & > .img{
+                    transition: transform .2s ease-in-out;
+                    margin: 1px;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                    cursor: pointer;
                     & img{
                         height: 100%;
                         width: 100%;
@@ -134,10 +148,14 @@ footer{
             grid-template-areas:    "blogs"
                                     "insta"
                                     "mogo";
-            & .spec-title-bold{
+
+        & .blogs, & .instagram, & .mogo{
+            & > .spec-title-bold{
                 text-align: center;
             }
-            & .instagram{
+        }
+        & .instagram{
+                
                 & .container{
                     justify-content: center;
                 }

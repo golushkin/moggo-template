@@ -23,15 +23,11 @@
             & .info{
                 margin-left: 1rem;
                 & h6{
-                    font-family: 'Montserrat';
                     font-size: $service_info_title;
                     text-transform: uppercase;
                 }
                 & p{
                     margin-top: 15px;
-                    font-family: 'Roboto';
-                    font-size: $service_info_p;
-                    color: $light_black;
                 }
             }
         }

@@ -35,10 +35,8 @@
                     & .info{
                         margin-left: 3rem;
                         font-size: $cite_p;
-                        & p{
-                            font-style: italic;
-                            font-family: 'Roboto';
-                            color: $light_black;
+                        & > .spec-text-ic{
+                            font-size: inherit;
                         }
                         & .author{
                             font-family: 'KaushanScript';

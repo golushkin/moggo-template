@@ -74,20 +74,14 @@
                 }
                 
             }
-            & .name{
+            & > .spec-title{
                 margin-top: 2rem;
-                text-transform: uppercase;
-                font-family: 'Montserrat';
                 font-size: $team_name;
                 text-align: center;
-                font-weight: bold;
             }
-            & .job{
+            & > .spec-text-ic{
                 margin-top: .5rem;
                 text-transform: capitalize;
-                color: $light_black;
-                font-style: italic;
-                font-size: $team_job;
                 text-align: center;
             }
         }
