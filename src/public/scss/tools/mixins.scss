@@ -6,6 +6,8 @@
 
 @mixin spec_title_bold {
     font-family: 'MontserratBold';
+    font-size: 0.875rem;
+    color: $black;
 }
 
 @mixin spec_text {

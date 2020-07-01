@@ -7,12 +7,9 @@
     & .wrapper{
         color: $black; 
         
-        & .text{
+        & > .spec-text-c{
             text-align: center;
             margin: 5.2rem 0;
-            color: $light_black;
-            font-family: "Roboto";
-            font-size: $about_text;
         }
         & .images{
             display: flex;

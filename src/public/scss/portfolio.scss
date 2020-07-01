@@ -63,17 +63,8 @@
                 & .icon{
                     font-size: 2rem;
                 }
-                & > p.text{
-                    text-transform: uppercase;
-                    font-family: 'Montserrat';
-                    font-weight: bold;
-                    font-size: $port_p1;
+                & > .spec-title{
                     margin: .7rem 0;
-                }
-                & p:last-child{
-                    font-style: italic;
-                    font-family: 'Roboto';
-                    font-size: $port_p2;
                 }
             }
             &.flex{

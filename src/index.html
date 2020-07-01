@@ -17,10 +17,10 @@
                     <a href="#">MoGo</a>
                 </div>
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" data-target="about">About</a></li>
+                    <li><a href="#" data-target="service">Service</a></li>
+                    <li><a href="#" data-target="stories">Blog</a></li>
+                    <li><a href="#" data-target="footer">Contact</a></li>
                     <li><i class="fas fa-shopping-cart"></i></li>
                     <li><i class="fas fa-search"></i></li>
                 </ul>
@@ -101,7 +101,7 @@
     <main>
         <div class="about">
             <div class="wrapper">
-                <div class="title">
+                <div class="title" data-aos="fade-down">
                     <p>
                         What we do
                     </p>
@@ -109,7 +109,7 @@
                         story about us
                     </p>
                 </div>
-                <div class="text">
+                <div class="spec-text-c" data-aos="zoom-in">
                     Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt
@@ -119,21 +119,21 @@
                     aliquip ex ea commodo consequat.
                 </div>
                 <div class="images">
-                    <div class="img">
+                    <div class="img" data-aos="fade-right">
                         <img src="./img/img-1.jpg" alt="netu">
                         <div class="display-block">
                             <p class="icon"><i class="fas fa-user-friends"></i></p>
                             <p>super team</p>
                         </div>
                     </div>
-                    <div class="img">
+                    <div class="img" data-aos="fade-down">
                         <img src="./img/img-2.jpg" alt="netu">
                         <div class="display-block">
                             <p class="icon"><i class="fas fa-pen-fancy"></i></p>
                             <p>creativity</p>
                         </div>
                     </div>
-                    <div class="img">
+                    <div class="img" data-aos="fade-left">
                         <img src="./img/img-3.jpg" alt="netu">
                         <div class="display-block">
                             <p class="icon"><i class="fas fa-desktop"></i></i></p>
@@ -189,7 +189,7 @@
         </div>
         <div class="work">
             <div class="wrapper">
-                <div class="title">
+                <div class="title" data-aos="fade-down">
                     <p>
                         We work with
                     </p>
@@ -198,13 +198,13 @@
                     </p>
                 </div>
                 <div class="works">
-                    <div class="item">
+                    <div class="item" data-aos="zoom-in-right">
                         <div class="icon"><i class="fas fa-camera"></i></div>
                         <div class="info">
-                            <h6>
+                            <h6 class="spec-title-bold">
                                 photography
                             </h6>
-                            <p>
+                            <p class="spec-text-c">
                                 Lorem ipsum dolor sit amet
                                 consectetur adipisicing elit.
                                 Voluptatum officia similique
@@ -212,13 +212,13 @@
                             </p>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" data-aos="zoom-in-up">
                         <div class="icon"><i class="fas fa-ruler-combined"></i></div>
                         <div class="info">
-                            <h6>
-                                web desing
+                            <h6 class="spec-title-bold">
+                                photography
                             </h6>
-                            <p>
+                            <p class="spec-text-c">
                                 Lorem ipsum dolor sit amet
                                 consectetur adipisicing elit.
                                 Voluptatum officia similique
@@ -226,13 +226,13 @@
                             </p>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" data-aos="zoom-in-left">
                         <div class="icon"><i class="fas fa-pen-fancy"></i></div>
                         <div class="info">
-                            <h6>
-                                creativity
+                            <h6 class="spec-title-bold">
+                                photography
                             </h6>
-                            <p>
+                            <p class="spec-text-c">
                                 Lorem ipsum dolor sit amet
                                 consectetur adipisicing elit.
                                 Voluptatum officia similique
@@ -240,13 +240,13 @@
                             </p>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" data-aos="zoom-in-right">
                         <div class="icon"><i class="fas fa-book-open"></i></div>
                         <div class="info">
-                            <h6>
-                                seo
+                            <h6 class="spec-title-bold">
+                                photography
                             </h6>
-                            <p>
+                            <p class="spec-text-c">
                                 Lorem ipsum dolor sit amet
                                 consectetur adipisicing elit.
                                 Voluptatum officia similique
@@ -254,13 +254,13 @@
                             </p>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" data-aos="zoom-in-up">
                         <div class="icon"><i class="far fa-file-code"></i></div>
                         <div class="info">
-                            <h6>
-                                css/html
+                            <h6 class="spec-title-bold">
+                                photography
                             </h6>
-                            <p>
+                            <p class="spec-text-c">
                                 Lorem ipsum dolor sit amet
                                 consectetur adipisicing elit.
                                 Voluptatum officia similique
@@ -268,13 +268,13 @@
                             </p>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" data-aos="zoom-in-left">
                         <div class="icon"><i class="fas fa-desktop"></i></div>
                         <div class="info">
-                            <h6>
-                                digital
+                            <h6 class="spec-title-bold">
+                                photography
                             </h6>
-                            <p>
+                            <p class="spec-text-c">
                                 Lorem ipsum dolor sit amet
                                 consectetur adipisicing elit.
                                 Voluptatum officia similique
@@ -287,7 +287,7 @@
         </div>
         <div class="design">
             <div class="wrapper">
-                <div class="title">
+                <div class="title" data-aos="fade-down">
                     <p>
                         For all devices
                     </p>
@@ -296,22 +296,22 @@
                     </p>
                 </div>
                 <div class="img">
-                    <img src="./img/tablet.png" alt="">
-                    <img src="./img/mobile.png" alt="">
+                    <img data-aos="fade-down-right" src="./img/tablet.png" alt="">
+                    <img data-aos-offset="300" data-aos="fade-down-left" src="./img/mobile.png" alt="">
                 </div>
             </div>
         </div>
         <div class="service">
             <div class="wrapper">
-                <div class="title">
+                <div class="title" data-aos="fade-down">
                     <p>
-                        For all devices
+                        Service
                     </p>
                     <p>
-                        unique design
+                        what we do
                     </p>
                 </div>
-                <p class="text">
+                <p class="spec-text-c" data-aos="zoom-in">
                     Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt
@@ -321,19 +321,19 @@
                     aliquip ex ea commodo consequat.
                 </p>
                 <div class="img-with-info">
-                    <div class="img">
+                    <div data-aos="flip-down" class="img">
                         <img src="./img/service_img.jpg" alt="">
                     </div>
                     <div class="info">
-                        <div class="item">
+                        <div data-aos="zoom-in" class="item">
                             <div class="header">
                                 <div class="icon">
                                     <i class="fas fa-camera"></i>
                                 </div>
-                                <p>photography</p>
+                                <p class="spec-title">photography</p>
                                 <div class="arrow" data-click=''>&#8249;</div>
                             </div>
-                            <div class="content">
+                            <p class="spec-text-ic">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam nisi neque, nostrum
                                 ipsum quos, possimus tempora quia veniam distinctio consectetur error ullam corrupti?
                                 Non excepturi, ea eaque corrupti quas recusandae praesentium aperiam iure sit hic
@@ -357,17 +357,17 @@
                                 vel amet, esse sit, quis qui praesentium ipsum minus accusamus quia alias voluptatem
                                 cupiditate id ut nobis, saepe error exercitationem officia fugit culpa necessitatibus
                                 sint.
-                            </div>
+                            </p>
                         </div>
-                        <div class="item">
+                        <div data-aos="zoom-in" class="item">
                             <div class="header">
                                 <div class="icon">
                                     <i class="fas fa-pen-fancy"></i>
                                 </div>
-                                <p>creativity</p>
+                                <p class="spec-title">creativity</p>
                                 <div class="arrow" data-click=''>&#8249;</div>
                             </div>
-                            <div class="content">
+                            <p class="spec-text-ic">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam nisi neque, nostrum
                                 ipsum quos, possimus tempora quia veniam distinctio consectetur error ullam corrupti?
                                 Non excepturi, ea eaque corrupti quas recusandae praesentium aperiam iure sit hic
@@ -391,17 +391,17 @@
                                 vel amet, esse sit, quis qui praesentium ipsum minus accusamus quia alias voluptatem
                                 cupiditate id ut nobis, saepe error exercitationem officia fugit culpa necessitatibus
                                 sint.
-                            </div>
+                            </p>
                         </div>
-                        <div class="item">
+                        <div data-aos="zoom-in" class="item">
                             <div class="header">
                                 <div class="icon">
                                     <i class="fas fa-ruler-combined"></i>
                                 </div>
-                                <p>web design</p>
+                                <p class="spec-title">web design</p>
                                 <div class="arrow" data-click=''>&#8249;</div>
                             </div>
-                            <div class="content">
+                            <p class="spec-text-ic">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam nisi neque, nostrum
                                 ipsum quos, possimus tempora quia veniam distinctio consectetur error ullam corrupti?
                                 Non excepturi, ea eaque corrupti quas recusandae praesentium aperiam iure sit hic
@@ -425,7 +425,7 @@
                                 vel amet, esse sit, quis qui praesentium ipsum minus accusamus quia alias voluptatem
                                 cupiditate id ut nobis, saepe error exercitationem officia fugit culpa necessitatibus
                                 sint.
-                            </div>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -433,14 +433,14 @@
         </div>
         <div class="cite first">
             <div class="wrapper">
-                <div class="slider-wrapper">
+                <div data-aos="zoom-out" class="slider-wrapper">
                     <div class="slider">
                         <div class="item">
                             <div class="icon">
                                 <i class="far fa-comments"></i>
                             </div>
                             <div class="info">
-                                <p>
+                                <p class="spec-text-ic">
                                     “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                                     exercitation.”
@@ -455,7 +455,7 @@
                                 <i class="far fa-comments"></i>
                             </div>
                             <div class="info">
-                                <p>
+                                <p class="spec-text-ic">
                                     “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                                     exercitation.”
@@ -470,7 +470,7 @@
                                 <i class="far fa-comments"></i>
                             </div>
                             <div class="info">
-                                <p>
+                                <p class="spec-text-ic">
                                     “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                                     exercitation.”
@@ -490,7 +490,7 @@
         </div>
         <div class="team">
             <div class="wrapper">
-                <div class="title">
+                <div class="title" data-aos="fade-down">
                     <p>
                         For all devices
                     </p>
@@ -499,7 +499,7 @@
                     </p>
                 </div>
                 <div class="images">
-                    <div class="item">
+                    <div data-aos="flip-right" class="item">
                         <div class="img">
                             <img src="./img/team_1.jpg" alt="">
                             <div class="bg-media">
@@ -509,14 +509,14 @@
                                 <i class="fab fa-instagram"></i>
                             </div>
                         </div>
-                        <div class="name">
+                        <div class="spec-title">
                             matthew dix
                         </div>
-                        <div class="job">
+                        <div class="spec-text-ic">
                             graphic design
                         </div>
                     </div>
-                    <div class="item">
+                    <div data-aos="flip-up" class="item">
                         <div class="img">
                             <img src="./img/team_2.jpg" alt="">
                             <div class="bg-media">
@@ -526,14 +526,14 @@
                                 <i class="fab fa-instagram"></i>
                             </div>
                         </div>
-                        <div class="name">
+                        <div class="spec-title">
                             christompher campbell
                         </div>
-                        <div class="job">
+                        <div class="spec-text-ic">
                             Branding/UX design
                         </div>
                     </div>
-                    <div class="item">
+                    <div data-aos="flip-left" class="item">
                         <div class="img">
                             <img src="./img/team_3.jpg" alt="">
                             <div class="bg-media">
@@ -543,10 +543,10 @@
                                 <i class="fab fa-instagram"></i>
                             </div>
                         </div>
-                        <div class="name">
+                        <div class="spec-title">
                             michael fertig
                         </div>
-                        <div class="job">
+                        <div class="spec-text-ic">
                             developer
                         </div>
                     </div>
@@ -555,17 +555,46 @@
         </div>
         <div class="logos">
             <div class="wrapper">
-                <div class="img"><img src="./img/logo-1.png" alt=""></div>
-                <div class="img"><img src="./img/logo-2.png" alt=""></div>
-                <div class="img"><img src="./img/logo-3.png" alt=""></div>
-                <div class="img"><img src="./img/logo-4.png" alt=""></div>
-                <div class="img"><img src="./img/logo-5.png" alt=""></div>
-                <div class="img"><img src="./img/logo-6.png" alt=""></div>
+                <div data-aos="flip-right"
+                data-aos-offset='300'
+                data-aos-duration='500'
+                data-aos-delay='2500' class="img">
+                    <img src="./img/logo-1.png" alt="">
+                </div>
+                <div data-aos="flip-right"
+                data-aos-offset='300'
+                data-aos-duration='500'        
+                data-aos-delay='2000' class="img">
+                    <img src="./img/logo-2.png" alt="">
+                </div>
+                <div data-aos="flip-right"
+                data-aos-offset='300'
+                data-aos-duration='500'
+                data-aos-delay='1500' class="img">
+                    <img src="./img/logo-3.png" alt="">
+                </div>
+                <div data-aos="flip-right"
+                data-aos-offset='300'
+                data-aos-duration='500'
+                data-aos-delay='1000' class="img">
+                    <img src="./img/logo-4.png" alt="">
+                </div>
+                <div data-aos="flip-right"
+                data-aos-offset='300'
+                data-aos-duration='500'
+                data-aos-delay='500' class="img">
+                    <img src="./img/logo-5.png" alt="">
+                </div>
+                <div data-aos="flip-right"
+                data-aos-offset='300'
+                data-aos-duration='500' class="img">
+                    <img src="./img/logo-6.png" alt="">
+                </div>
             </div>
         </div>
         <div class="portfolio">
             <div class="wrapper">
-                <div class="title">
+                <div class="title" data-aos="fade-down">
                     <p>
                         What we do
                     </p>
@@ -575,88 +604,88 @@
                 </div>
             </div>
             <div class="images">
-                <div class="img flex">
+                <div data-aos="zoom-in-up" data-aos-delay="200" class="img flex">
                     <img src="./img/po1.png" alt="">
                     <div class="bg">
                         <div class="icon">
                             <i class="fas fa-icons"></i>
                         </div>
-                        <p class="text">creatively designed</p>
-                        <p>Lorem ipsum dolor sit.</p>
+                        <p class="spec-title">creatively designed</p>
+                        <p class="spec-text-i">Lorem ipsum dolor sit.</p>
                     </div>
                 </div>
-                <div class="img flex">
+                <div data-aos="zoom-in-up" data-aos-delay="200" class="img flex">
                     <img src="./img/po2.png" alt="">
                     <div class="bg">
                         <div class="icon">
                             <i class="fas fa-icons"></i>
                         </div>
-                        <p class="text">creatively designed</p>
-                        <p>Lorem ipsum dolor sit.</p>
+                        <p class="spec-title">creatively designed</p>
+                        <p class="spec-text-i">Lorem ipsum dolor sit.</p>
                     </div>
                 </div>
-                <div class="img flex">
+                <div data-aos="zoom-in-up" data-aos-delay="200" class="img flex">
                     <img src="./img/po3.png" alt="">
                     <div class="bg">
                         <div class="icon">
                             <i class="fas fa-icons"></i>
                         </div>
-                        <p class="text">creatively designed</p>
-                        <p>Lorem ipsum dolor sit.</p>
+                        <p class="spec-title">creatively designed</p>
+                        <p class="spec-text-i">Lorem ipsum dolor sit.</p>
                     </div>
                 </div>
-                <div class="img flex">
+                <div data-aos="zoom-in-up" data-aos-delay="200" class="img flex">
                     <img src="./img/po4.png" alt="">
                     <div class="bg">
                         <div class="icon">
                             <i class="fas fa-icons"></i>
                         </div>
-                        <p class="text">creatively designed</p>
-                        <p>Lorem ipsum dolor sit.</p>
+                        <p class="spec-title">creatively designed</p>
+                        <p class="spec-text-i">Lorem ipsum dolor sit.</p>
                     </div>
                 </div>
-                <div class="img flex">
+                <div data-aos="zoom-in-up" data-aos-delay="350" class="img flex">
                     <img src="./img/po5.png" alt="">
                     <div class="bg">
                         <div class="icon">
                             <i class="fas fa-icons"></i>
                         </div>
-                        <p class="text">creatively designed</p>
-                        <p>Lorem ipsum dolor sit.</p>
+                        <p class="spec-title">creatively designed</p>
+                        <p class="spec-text-i">Lorem ipsum dolor sit.</p>
                     </div>
                 </div>
-                <div class="img flex">
+                <div data-aos="zoom-in-up" data-aos-delay="350" class="img flex">
                     <img src="./img/po6.png" alt="">
                     <div class="bg">
                         <div class="icon">
                             <i class="fas fa-icons"></i>
                         </div>
-                        <p class="text">creatively designed</p>
-                        <p>Lorem ipsum dolor sit.</p>
+                        <p class="spec-title">creatively designed</p>
+                        <p class="spec-text-i">Lorem ipsum dolor sit.</p>
                     </div>
                 </div>
-                <div class="img flex">
+                <div data-aos="zoom-in-up" data-aos-delay="350" class="img flex">
                     <img src="./img/po7.png" alt="">
                     <div class="bg">
                         <div class="icon">
                             <i class="fas fa-icons"></i>
                         </div>
-                        <p class="text">creatively designed</p>
-                        <p>Lorem ipsum dolor sit.</p>
+                        <p class="spec-title">creatively designed</p>
+                        <p class="spec-text-i">Lorem ipsum dolor sit.</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="cite second">
             <div class="wrapper">
-                <div class="slider-wrapper">
+                <div data-aos="zoom-out" class="slider-wrapper">
                     <div class="slider">
                         <div class="item">
                             <div class="img">
                                 <img src="./img/cite2.png" alt="">
                             </div>
                             <div class="info">
-                                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                <p class="spec-text-ic">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                                     exercitation.”</p>
                                 <div class="author">joshua Earle</div>
@@ -667,7 +696,7 @@
                                 <img src="./img/cite2.png" alt="">
                             </div>
                             <div class="info">
-                                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                <p class="spec-text-ic">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                                     exercitation.”</p>
                                 <div class="author">joshua Earle</div>
@@ -678,7 +707,7 @@
                                 <img src="./img/cite2.png" alt="">
                             </div>
                             <div class="info">
-                                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                <p class="spec-text-ic">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                                     exercitation.”</p>
                                 <div class="author">joshua Earle</div>
@@ -694,7 +723,7 @@
         </div>
         <div class="clients">
             <div class="wrapper">
-                <div class="title">
+                <div class="title" data-aos="fade-down">
                     <p>
                         Happy Clients
                     </p>
@@ -704,7 +733,7 @@
                 </div>
                 <div class="rows">
                     <div class="row">
-                        <div class="item">
+                        <div class="item" data-aos="fade-down-right">
                             <div class="img">
                                 <img src="./img/client1.png" alt="">
                             </div>
@@ -718,7 +747,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item" data-aos="fade-down-left">
                             <div class="img">
                                 <img src="./img/client2.png" alt="">
                             </div>
@@ -734,7 +763,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="item">
+                        <div class="item" data-aos="fade-up-right">
                             <div class="img">
                                 <img src="./img/client3.png" alt="">
                             </div>
@@ -748,7 +777,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item" data-aos="fade-up-left">
                             <div class="img">
                                 <img src="./img/client4.png" alt="">
                             </div>
@@ -768,7 +797,7 @@
         </div>
         <div class="stories">
             <div class="wrapper">
-                <div class="title">
+                <div class="title" data-aos="fade-down">
                     <p>
                         Our stories
                     </p>
@@ -777,7 +806,7 @@
                     </p>
                 </div>
                 <div class="blog">
-                    <div class="item">
+                    <div data-aos="flip-left" class="item">
                         <div class="img">
                             <img src="./img/story1.jpg" alt="">
                             <div class="info-img">
@@ -785,9 +814,9 @@
                                 <p class="spec-text">jan</p>
                             </div>
                         </div>
-                        <div class="spec-title">
-                            Lorem ipsum dolor sit amet
-                        </div>
+                        <h5 class="spec-title">
+                            <a href="#">Lorem ipsum dolor sit amet</a>
+                        </h5>
                         <p class="spec-text-c">
                             Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                             aliqua.
@@ -799,7 +828,7 @@
                             <span class="spec-text-ic">17</span>
                         </div>
                     </div>
-                    <div class="item">
+                    <div data-aos="flip-down" class="item">
                         <div class="img">
                             <img src="./img/story2.jpg" alt="">
                             <div class="info-img">
@@ -807,9 +836,9 @@
                                 <p class="spec-text">jan</p>
                             </div>
                         </div>
-                        <div class="spec-title">
-                            Lorem ipsum dolor sit amet
-                        </div>
+                        <h5 class="spec-title">
+                            <a href="#">Lorem ipsum dolor sit amet</a>
+                        </h5>
                         <p class="spec-text-c">
                             Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                             aliqua.
@@ -821,7 +850,7 @@
                             <span class="spec-text-ic">17</span>
                         </div>
                     </div>
-                    <div class="item">
+                    <div data-aos="flip-right" class="item">
                         <div class="img">
                             <img src="./img/story3.jpg" alt="">
                             <div class="info-img">
@@ -829,9 +858,9 @@
                                 <p class="spec-text">jan</p>
                             </div>
                         </div>
-                        <div class="spec-title">
-                            Lorem ipsum dolor sit amet
-                        </div>
+                        <h5 class="spec-title">
+                            <a href="#">Lorem ipsum dolor sit amet</a>
+                        </h5>
                         <p class="spec-text-c">
                             Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                             aliqua.
@@ -846,7 +875,7 @@
                 </div>
             </div>
         </div>
-        <div id="map" class="in-active">
+        <div id="map" data-aos="zoom-in-up" data-aos-offset="500" class="in-active">
             <div class="info">
                 <i class="fas fa-map-marker-alt"></i>
                 <span class="spec-title">open map</span>
@@ -856,86 +885,94 @@
     <footer>
         <div class="wrapper">
             <div class="mogo">
-                <h class="spec-title-bold">MoGo</h>
-                <p class="spec-text-c">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                <h3 data-aos="fade-down-right" class="spec-title-bold">MoGo</h3>
+                <p data-aos="fade-right" class="spec-text-c">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat.
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                     pariatur.
                 </p>
-                <div class="spec-text"><span class="spec-title-bold">15k</span> followers</div>
-                <div class="media">
-                    <span class="spec-text-ic">Follow us: </span>
-                    <a href="#">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-pinterest-p"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-google-plus-g"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fas fa-basketball-ball"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-telegram"></i>
-                    </a>
+                <div data-aos-offset="250" data-aos="fade-up-right">
+                    <div class="spec-text"><span class="spec-title-bold">15k</span> followers</div>
+                    <div class="media">
+                        <span class="spec-text-ic">Follow us: </span>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-basketball-ball"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+                    <form>
+                        <input class="spec-text-ic" placeholder="Your Email..." type="text"><button class="spec-title" type="submit">Subscribe</button>
+                    </form>
                 </div>
-                <form>
-                    <input class="spec-text-ic" placeholder="Your Email..." type="text"><button class="spec-title" type="submit">Subscribe</button>
-                </form>
             </div>
             <div class="blogs">
-                <div class="spec-title-bold">Blogs</div>
-                <div class="item">
+                <div data-aos="fade-down"  class="spec-title-bold">Blogs</div>
+                <div data-aos="zoom-in" data-aos-offset="250" class="item">
                     <div class="img">
                         <img src="./img/footer-blog1.jpg" alt="">
                     </div>
                     <div class="info">
-                        <a class="spec-title-bold" href="#">Lorem ipsum dolor sit amet,
-                            consectetur adipiscing
-                        </a>
+                        <h6 class="spec-title-bold" >
+                            <a href="#">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing
+                            </a>
+                        </h6>
                         <p class="spec-text-ic">
                             Jan 9, 2016
                         </p>
                     </div>
                     
                 </div>
-                <div class="item">
+                <div data-aos="zoom-in" data-aos-offset="200" class="item">
                     <div class="img">
                         <img src="./img/footer-blog2.jpg" alt="">
                     </div>
                     <div class="info">
-                        <a class="spec-title-bold" href="#">Lorem ipsum dolor sit amet,
-                            consectetur adipiscing
-                        </a>
+                        <h6 class="spec-title-bold" >
+                            <a href="#">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing
+                            </a>
+                        </h6>
                         <p class="spec-text-ic">
                             Jan 9, 2016
                         </p>
                     </div>
                 </div>
-                <div class="item">
+                <div data-aos="zoom-in" data-aos-offset="200" class="item">
                     <div class="img">
                         <img src="./img/footer-blog3.jpg" alt="">
                     </div>
                     <div class="info">
-                        <a class="spec-title-bold" href="#">Lorem ipsum dolor sit amet,
-                            consectetur adipiscing
-                        </a>
+                        <h6 class="spec-title-bold" >
+                            <a href="#">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing
+                            </a>
+                        </h6>
                         <p class="spec-text-ic">
                             Jan 9, 2016
                         </p>
@@ -943,10 +980,10 @@
                 </div>
             </div>
             <div class="instagram">
-                <div class="spec-title-bold">
+                <div data-aos="fade-down-left" class="spec-title-bold">
                     instagram
                 </div>
-                <div class="container">
+                <div data-aos="fade-left" class="container">
                     <div class="img">
                         <img src="./img/footer-insta1.jpg" alt="">
                     </div>
@@ -976,7 +1013,7 @@
                     </div>
                 </div>
                
-                <p class="spec-text-ic">View more photos</p>
+                <p data-aos="fade-up-left" data-aos-offset="200" class="spec-text-ic">View more photos</p>
             </div>
         </div>
         <p class="spec-title-bold">© 2016 MoGo free PSD template by <span>Laaqiq</span></p>

@@ -1,5 +1,5 @@
 const arrows = document.querySelectorAll('.arrow')
-const contents = document.querySelectorAll('.content')
+const contents = document.querySelectorAll('.service .spec-text-ic')
 let current_i = undefined
 
 function toggle(out = false){

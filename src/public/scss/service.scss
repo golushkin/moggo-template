@@ -8,11 +8,8 @@
     & .title{
         margin-top: 9rem;
     }
-    & .text{
+    & .spec-text-c{
         text-align: center;
-        font-family: 'Roboto';
-        font-size: $service_info_p;
-        color: $light_black;
         margin-top: 5.625rem;
     }
 
@@ -37,10 +34,7 @@
                     display: grid;
                     grid-template-columns: 50px repeat(2, 1fr);
                     align-items: center;
-                    & p{
-                        text-transform: uppercase;
-                        font-family: 'Montserrat';
-                        font-weight: bold;
+                    & .spec-title{
                         justify-self: start;
                     }
                     & .icon{
@@ -65,17 +59,14 @@
                         }
                     }
                 }
-                & .content{
+                & .spec-text-ic{
                     display: none;
                     height: 178px;
                     overflow-y: scroll;
                     border: 1px solid $border;
                     border-top: none;
                     padding: 15px;
-                    font-family: 'Roboto';
-                    color: $light_black;
-                    font-style: italic;
-                    font-size: $service_info_p;
+                
                     transition: height .3s ease-in-out;
 
                     &.active{
